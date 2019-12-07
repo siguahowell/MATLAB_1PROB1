@@ -1,0 +1,19 @@
+%-------given that n------%
+n=linspace(0,99);
+%---------pre allocation and initialization----%
+y=zeros(1,100);
+i=0;
+%loop starting from integers greater than 10%
+while i<=99
+    x=i;
+    i=i+1;
+    while (x>=10)
+        x=x-10;
+    end
+%-------------f(n^-7)------%    
+    fofn =((x^2) - 7);
+%---insert every int in array of y--%    
+    y(i)= fofn;
+end
+%---graph use stem----%
+stem(n,yarr)
